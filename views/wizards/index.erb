@@ -1,0 +1,20 @@
+<h1>Wizards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>House</th>
+    <th></th>
+    <th>Wand</th>
+  </tr>
+  <% for wizard in @wizards %>
+  <tr>
+    <td><a href="/wizards/<%= wizard.id %>"><%= wizard.name %></a></td>
+    <td>|</td>
+    <td><%= wizard.house %></td>
+    <td>|</td>
+    <td><%= wizard.wand %></td>
+  </tr>
+  <% end %>
+</table>

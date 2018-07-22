@@ -1,0 +1,23 @@
+<h1>Attack now!</h1>
+
+<form action="/attacks" method="post">
+  <label>
+  Select a wizard:
+    <select name="wizard_id">
+      <% for wizard in @wizards %>
+      <option value="<%= wizard.id %>"><%= wizard.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <label>
+    Select a codedclanner:
+    <select name="codeclanner_id">
+      <% for codeclanner in @codeclanners %>
+      <option value="<%= codeclanner.id %>"><%= codeclanner.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <input class="btn btn--action" type='submit' value="Attack!">
+</form>

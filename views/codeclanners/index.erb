@@ -1,0 +1,16 @@
+<h1>Codeclanners</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Kohort</th>
+  </tr>
+  <% for codeclanner in @codeclanners %>
+  <tr>
+    <td><a href="/codeclanners/<%= codeclanner.id %>"><%= codeclanner.name %></a></td>
+    <td>|</td>
+    <td><%= codeclanner.kohort %></td>
+  </tr>
+  <% end %>
+</table>
