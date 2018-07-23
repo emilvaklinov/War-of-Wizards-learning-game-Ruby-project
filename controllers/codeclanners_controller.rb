@@ -14,12 +14,15 @@ get '/codeclanners/new' do
   erb (:"codeclanners/new")
 end
 
+get '/codeclanners/testimonials' do
+  @codeclanners = Codeclanner.all
+  erb (:"codeclanners/testimonials")
+end
+
 get '/codeclanners/:id' do
   @codeclanner = Codeclanner.find(params['id'].to_i)
   erb( :"codeclanners/show" )
 end
-
-
 
 # create
 post '/codeclanners' do
