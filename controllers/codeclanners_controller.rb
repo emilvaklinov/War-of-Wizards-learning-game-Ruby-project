@@ -8,14 +8,23 @@ get '/codeclanners' do
   erb (:"codeclanners/index")
 end
 
+# Add new
+get '/codeclanners/new' do
+  @codeclanners = Codeclanner.all
+  erb (:"codeclanners/new")
+end
+
 get '/codeclanners/:id' do
   @codeclanner = Codeclanner.find(params['id'].to_i)
-  erb( :"codeclanners/new" )
+  erb( :"codeclanners/show" )
 end
+
+
 
 # create
 post '/codeclanners' do
     @codeclanner = Codeclanner.new(params)
     @codeclanner.save
-    erb (:create)
+    # erb (:"codeclanners/new")
+    redirect to '/codeclanners'
 end

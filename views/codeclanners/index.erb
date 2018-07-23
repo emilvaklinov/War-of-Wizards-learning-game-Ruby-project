@@ -4,13 +4,30 @@
   <tr>
     <th>Name</th>
     <th></th>
-    <th>Kohort</th>
+    <th>Cohort</th>
   </tr>
   <% for codeclanner in @codeclanners %>
   <tr>
     <td><a href="/codeclanners/<%= codeclanner.id %>"><%= codeclanner.name %></a></td>
     <td>|</td>
-    <td><%= codeclanner.kohort %></td>
+    <td><%= codeclanner.cohort %></td>
   </tr>
   <% end %>
 </table>
+
+<%# THIS WILL NOT RUN %>
+<% if false %>
+  <from action="/codeclanners" method="get">
+  <input type="submit" name="Add codeclanner">
+
+  </from
+
+
+
+  <h2><%= @codeclanner.name %></h2>
+
+  <p>Cohort: <%= @codclanner.cohort %></p>
+
+  <a href="/codeclannerss/<%= @codeclanner.id %>/edit">Edit</a>
+  <form action="/codeclannerss/<%= @codeclnner.id %>/delete" method="POST"><input type="submit" value="Delete"></form>
+<% end %>

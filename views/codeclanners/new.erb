@@ -1,11 +1,15 @@
-<h1><%= @codeclanner.name %> (codeclanner)</h1>
+<h1>Add Codeclanner</h1>
 
-<p>Kohort: <%= @codeclanner.kohort %></p>
+<form class="" action="/codeclanners" method="post">
+<label for="name">Name: </label>
+  <input id="name" type="text" name="name"/>
+</br>
 
-<h3>Attacked by:</h3>
+<label for="cohort">Cohort: </label>
+  <input id="cohort" type="text" name="cohort"/>
+</br>
 
-<ul>
-  <% @codeclanner.wizards.each do |wizard| %>
-  <li><%= wizard.name %></li>
-  <% end %>
-</ul>
+
+
+<input type="submit" value="Add codeclanner">
+</form>

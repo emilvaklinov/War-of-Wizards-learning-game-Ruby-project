@@ -1,0 +1,11 @@
+<h1><%= @codeclanner.name %> (codeclanner)</h1>
+
+<p>Cohort: <%= @codeclanner.cohort %></p>
+
+<h3>Attacked by:</h3>
+
+<ul>
+  <% @codeclanner.wizards.each do |wizard| %>
+  <li><%= wizard.name %></li>
+  <% end %>
+</ul>

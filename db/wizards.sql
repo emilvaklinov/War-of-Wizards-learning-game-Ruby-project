@@ -15,7 +15,7 @@ CREATE TABLE codeclanners
 (
   id SERIAL8 primary key,
   name VARCHAR(255) not null,
-  kohort VARCHAR(255)
+  cohort VARCHAR(255)
 
 );
 

@@ -15,13 +15,13 @@ wizard2 = Wizard.new({ "name" => "Bellatrix Lestrange", "house" => "Slytherin",
     wizard1.save
     wizard2.save
 
-    codeclanner1 = Codeclanner.new({ "name" => "Emil", "kohort" => "E23"})
-    codeclanner2 = Codeclanner.new({ "name" => "Gary", "kohort" => "E22"})
-    codeclanner3 = Codeclanner.new({ "name" => "Ian", "kohort" => "E21"})
-    codeclanner4 = Codeclanner.new({ "name" => "Kirstie", "kohort" => "E23"})
-    codeclanner5 = Codeclanner.new({ "name" => "Jesus", "kohort" => "E22"})
-    codeclanner6 = Codeclanner.new({ "name" => "Mellinda", "kohort" => "CEO Codeclan"})
-    codeclanner7 = Codeclanner.new({ "name" => "Pawel", "kohort" => "Tutor"})
+    codeclanner1 = Codeclanner.new({ "name" => "Emil", "cohort" => "E23"})
+    codeclanner2 = Codeclanner.new({ "name" => "Gary", "cohort" => "E22"})
+    codeclanner3 = Codeclanner.new({ "name" => "Ian", "cohort" => "E21"})
+    codeclanner4 = Codeclanner.new({ "name" => "Kirstie", "cohort" => "E23"})
+    codeclanner5 = Codeclanner.new({ "name" => "Jesus", "cohort" => "E22"})
+    codeclanner6 = Codeclanner.new({ "name" => "Mellinda", "cohort" => "CEO Codeclan"})
+    codeclanner7 = Codeclanner.new({ "name" => "Pawel", "cohort" => "Tutor"})
 
     codeclanner1.save
     codeclanner2.save
@@ -48,7 +48,7 @@ wizard2 = Wizard.new({ "name" => "Bellatrix Lestrange", "house" => "Slytherin",
     attack6.save
     attack7.save
 
-codeclanner1.delete
+# codeclanner1.delete
 
     binding.pry
     nil
