@@ -13,9 +13,9 @@ get '/codeclanners/:id' do
   erb( :"codeclanners/new" )
 end
 
-# update
-# post '/students/:id' do
-#     student = Student.new(params)
-#     student.update()
-#     redirect to '/students/' + params['id']
-# end
+# create
+post '/codeclanners' do
+    @codeclanner = Codeclanner.new(params)
+    @codeclanner.save
+    erb (:create)
+end

@@ -44,8 +44,8 @@ def self.find(id)
   sql = "SELECT * FROM wizards
   WHERE id = $1"
   values = [id]
-  results = SqlRunner.run(sql. values)
-  return Wizard.new(results.firs)
+  results = SqlRunner.run(sql, values)
+  return Wizard.new(results.first)
 end
 
 def self.delete_all

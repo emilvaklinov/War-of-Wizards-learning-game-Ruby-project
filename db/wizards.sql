@@ -23,5 +23,5 @@ CREATE TABLE attacks
 (
   id SERIAL8 primary key,
   wizard_id INT8 references wizards(id),
-  codeclanner_id INT8 references codeclanners(id)
+  codeclanner_id INT8 references codeclanners(id) ON DELETE CASCADE
 );

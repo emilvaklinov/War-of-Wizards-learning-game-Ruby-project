@@ -23,17 +23,22 @@ class Codeclanner
     @id = results.first()['id'].to_i
   end
 
-  # def update()
-  #   sql = "UPDATE codeclanners SET ( name, kohort ) = ( $1, $2 )
-  #   WHERE id = $3"
-  #   values = [@name, @kohort, @id]
-  #   SqlRunner.run(sql, values)
-  # end
+# ADD new codeclanner
+  def update()
+    sql = "UPDATE codeclanners SET ( name, kohort ) = ( $1, $2 )
+    WHERE id = $3"
+    values = [@name, @kohort, @id]
+    SqlRunner.run(sql, values)
+  end
 
   def wizards
     sql = "SELECT w.* FROM wizards w INNER JOIN attacks a ON a.wizard_id = w.id
-    WHERE a.codeclanner_id = 1$;"
+    WHERE a.codeclanner_id = $1;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map{ |wizard|Wizard.new(wizard) }
   end
+
   def self.all()
     sql = "SELECT * FROM codeclanners"
     results = SqlRunner.run(sql)
@@ -49,6 +54,12 @@ class Codeclanner
   def self.delete_all
     sql = "SELECT FROM codeclanners"
     SqlRunner.run( sql )
+  end
+
+  def delete()
+    sql = "DELETE FROM codeclanners WHERE id = $1"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
   end
 
 

@@ -14,6 +14,7 @@ end
 
 get '/attacks/new' do
   @attacks = Attack.all
+  @codeclanners = Codeclanner.all
   @wizards = Wizard.all
   erb (:"attacks/new")
 end
@@ -23,11 +24,6 @@ post '/attacks' do
   attack.save
   redirect to ("/attacks")
 end
-
-# post '/attacks/:id/:delete' do
-#   Attack.destroy(params[:id])
-#   redirect to ("/attacks")
-# end
 
 post '/attacks/:id/delete' do
     attack = Attack.find(params['id'])

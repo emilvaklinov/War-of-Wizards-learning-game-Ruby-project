@@ -1,5 +1,5 @@
 body {
-  background: black url('/images/background.jpg');
+  background-image: url('/images/background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   color: papayawhip;
