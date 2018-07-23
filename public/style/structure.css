@@ -59,6 +59,6 @@ main {
 }
 
 #content {
-  border-left: 1px solid darkred;
+  border-left: 3px solid red;
   padding-left: 25px;
 }

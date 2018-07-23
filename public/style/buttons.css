@@ -1,6 +1,6 @@
 .btn {
   border:0px none;
-  border-radius: 3%;
+  border-radius: 2%;
   padding: 8px 12px;
   color: papayawhip;
   cursor:pointer;
@@ -16,11 +16,11 @@
 }
 
 .btn--action:hover {
-  background-color: #495C27;
+  background-color: #617a34;
 }
 
 .btn--action {
-  background-color: darkolivegreen;
+  background-color: green;
 }
 
 .btn--wrapper {
