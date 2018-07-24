@@ -10,9 +10,9 @@
   <% for attack in @attacks %>
   <li>
   <p><%= attack.wizard.name %> <%= @actions.sample %> <%= attack.codeclanner.name %></p>
-  <!-- <% if false %>
-  <p><%= attack.codeclanner.name %> <%= @action.sample %> <%= attack.wizard.name %></p>
-<% end %> -->
+
+  <p><%= attack.codeclanner.name %> <%= @actions.sample %> <%= attack.wizard.name %></p>
+
     <p>
       <form action="/attacks/<%= attack.id %>/delete" method="POST">
         <input class="btn btn--danger" type="submit" value="delete" />

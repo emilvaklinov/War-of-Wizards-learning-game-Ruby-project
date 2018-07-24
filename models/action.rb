@@ -1,13 +1,13 @@
 class Action
   def self.all
-    return ["make it frozen",
-            "make as a frog",
-            "make as a rabbit",
-            "made to fall in love to stone",
-            "made old",
-            "transform into mouse",
-            "burn it",
-            "transform into computer",
-          "make it zombie"]
+    return ["freezes",
+            "turns you into a frog -",
+            "turns you into a rabbit -",
+            "turns you into a stone -",
+            "makes you old -",
+            "transforms you into a mouse -",
+            "burns you with lightening bolts -",
+            "transforms you into a computer -",
+          "turns you into a zombie -"]
   end
 end
