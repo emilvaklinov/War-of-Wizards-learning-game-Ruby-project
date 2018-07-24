@@ -12,6 +12,9 @@
     <td>|</td>
     <td><%= codeclanner.cohort %></td>
   </tr>
+
+  
+
   <% end %>
 </table>
 
@@ -28,6 +31,6 @@
 
   <p>Cohort: <%= @codclanner.cohort %></p>
 
-  <a href="/codeclannerss/<%= @codeclanner.id %>/edit">Edit</a>
-  <form action="/codeclannerss/<%= @codeclnner.id %>/delete" method="POST"><input type="submit" value="Delete"></form>
+  <a href="/codeclanners/<%= @codeclanner.id %>/edit">Edit</a>
+  <form action="/codeclanners/<%= @codeclnner.id %>/delete" method="POST"><input type="submit" value="Delete"></form>
 <% end %>

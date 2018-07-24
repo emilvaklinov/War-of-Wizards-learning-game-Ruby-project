@@ -9,3 +9,9 @@
   <li><%= wizard.name %></li>
   <% end %>
 </ul>
+
+<p>
+  <form action="/codeclanners/<%= @codeclanner.id %>/delete" method="POST">
+    <input class="btn btn--danger" type="submit" value="Delete" />
+  </form>
+</p>

@@ -36,3 +36,10 @@ post '/codeclanners' do
     # erb (:"codeclanners/new")
     redirect to '/codeclanners'
 end
+
+# Delete
+post '/codeclanners/:id/delete' do
+  codeclanner = Codeclanner.find(params['id'])
+  codeclanner.delete()
+  redirect to '/codeclanners'
+end
