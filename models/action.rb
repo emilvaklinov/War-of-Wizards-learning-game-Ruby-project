@@ -1,6 +1,6 @@
 class Action
   def self.all
-    return ["freezes",
+    return ["freezes -",
             "turns you into a frog -",
             "turns you into a rabbit -",
             "turns you into a stone -",
@@ -8,6 +8,7 @@ class Action
             "transforms you into a mouse -",
             "burns you with lightening bolts -",
             "transforms you into a computer -",
+            "makes you baby -",
           "turns you into a zombie -"]
   end
 end
