@@ -1,15 +1,21 @@
 <h1>Add Codeclanner</h1>
 
 <form class="" action="/codeclanners" method="post">
-<label for="name">Name: </label>
-  <input id="name" type="text" name="name"/>
+  <div class="codeclanner-input">
+  <div class="codeclanner-label">
+    <label  for="name">Name: </label>
+  </div>
+    <input id="name" type="text" name="name"/>
+  </div>
 </br>
+<div class="codeclanner-input">
+  <div class="codeclanner-label">
 
-<label for="cohort">Cohort: </label>
-  <input id="cohort" type="text" name="cohort"/>
+    <label class="codeclanner-label" for="cohort">Cohort: </label>
+  </div>
+<input id="cohort" type="text" name="cohort"/>
+</div>
 </br>
-
-
-
 <input type="submit" value="Add codeclanner">
+
 </form>

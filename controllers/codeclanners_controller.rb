@@ -14,6 +14,11 @@ get '/codeclanners/new' do
   erb (:"codeclanners/new")
 end
 
+get '/codeclanners/about' do
+  @codeclanners = Codeclanner.all
+  erb (:"codeclanners/about")
+end
+
 get '/codeclanners/testimonials' do
   @codeclanners = Codeclanner.all
   erb (:"codeclanners/testimonials")

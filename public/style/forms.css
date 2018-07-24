@@ -19,3 +19,11 @@ select {
   outline-color: transparent;
   outline-style: none;
 }
+
+.codeclanner-input{
+  margin-bottom: 0.1em;
+}
+
+.codeclanner-label{
+  width: 10px;
+}

@@ -21,7 +21,7 @@ wizard3 = Wizard.new({ "name" => "Lucius Malfoy", "house" => "Slytherin",
   codeclanner1 = Codeclanner.new({ "name" => "Emil", "cohort" => "E23"})
   codeclanner2 = Codeclanner.new({ "name" => "Gary", "cohort" => "E22"})
   codeclanner3 = Codeclanner.new({ "name" => "Yang", "cohort" => "E21"})
-  codeclanner4 = Codeclanner.new({ "name" => "Kirstie", "cohort" => "E23"})
+  codeclanner4 = Codeclanner.new({ "name" => "Kirstin", "cohort" => "E23"})
   codeclanner5 = Codeclanner.new({ "name" => "Jesus", "cohort" => "E22"})
   codeclanner6 = Codeclanner.new({ "name" => "Mellinda", "cohort" => "CEO Codeclan"})
   codeclanner7 = Codeclanner.new({ "name" => "Pawel", "cohort" => "Tutor"})
