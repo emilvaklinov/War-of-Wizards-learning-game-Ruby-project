@@ -19,9 +19,9 @@ get '/codeclanners/about' do
   erb (:"codeclanners/about")
 end
 
-get '/codeclanners/testimonials' do
+get '/testimonials/testimonials' do
   @codeclanners = Codeclanner.all
-  erb (:"codeclanners/testimonials")
+  erb (:"testimonials/testimonials")
 end
 
 get '/codeclanners/:id' do

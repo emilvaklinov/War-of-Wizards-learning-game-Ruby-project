@@ -66,3 +66,8 @@ main {
   border-left: 3px solid red;
   padding-left: 25px;
 }
+
+.attack-list{
+  width: 200px;
+  margin-right: 50px;
+}

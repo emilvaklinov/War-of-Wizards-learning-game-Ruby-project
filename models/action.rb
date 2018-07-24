@@ -5,7 +5,9 @@ class Action
             "make as a rabbit",
             "fall in love to stone",
             "made old",
-            "transform it as a computer",
+            "transform into mouse",
+            "burn it",
+            "transform into computer",
           "make it zombie"]
   end
 end
