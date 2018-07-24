@@ -3,7 +3,7 @@ class Action
     return ["make it frozen",
             "make as a frog",
             "make as a rabbit",
-            "fall in love to stone",
+            "made to fall in love to stone",
             "made old",
             "transform into mouse",
             "burn it",

@@ -5,6 +5,7 @@ require_relative('../models/attack.rb')
 require_relative('../models/codeclanner.rb')
 require_relative('../models/wizard.rb')
 require_relative('../models/action.rb')
+# require_relative('../models/codeclanners_attack.rb')
 
 get '/attacks' do
   @attacks = Attack.all
