@@ -7,7 +7,7 @@ Codeclanner.delete_all()
 Wizard.delete_all()
 Attack.delete_all()
 
-wizard1 = Wizard.new({ "name" => "Voldemort", "house" => "Slytherin",
+wizard1 = Wizard.new({ "name" => "Lord Voldemort", "house" => "Slytherin",
   "wand" => "very black" })
 wizard2 = Wizard.new({ "name" => "Bellatrix Lestrange", "house" => "Slytherin",
   "wand" => "black" })
@@ -19,10 +19,10 @@ wizard3 = Wizard.new({ "name" => "Lucius Malfoy", "house" => "Slytherin",
   wizard3.save
 
   codeclanner1 = Codeclanner.new({ "name" => "Emil", "cohort" => "E23"})
-  codeclanner2 = Codeclanner.new({ "name" => "Gary", "cohort" => "E22"})
+  codeclanner2 = Codeclanner.new({ "name" => "Garry", "cohort" => "E23"})
   codeclanner3 = Codeclanner.new({ "name" => "Yang", "cohort" => "E21"})
   codeclanner4 = Codeclanner.new({ "name" => "Kirstin", "cohort" => "E23"})
-  codeclanner5 = Codeclanner.new({ "name" => "Jesus", "cohort" => "E22"})
+  codeclanner5 = Codeclanner.new({ "name" => "Robby", "cohort" => "E23"})
   codeclanner6 = Codeclanner.new({ "name" => "Mellinda", "cohort" => "CEO Codeclan"})
   codeclanner7 = Codeclanner.new({ "name" => "Pawel", "cohort" => "Tutor"})
 

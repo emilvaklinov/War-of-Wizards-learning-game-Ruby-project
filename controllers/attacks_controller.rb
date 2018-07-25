@@ -5,10 +5,12 @@ require_relative('../models/attack.rb')
 require_relative('../models/codeclanner.rb')
 require_relative('../models/wizard.rb')
 require_relative('../models/action.rb')
+require_relative('../models/newaction.rb')
 
 get '/attacks' do
   @attacks = Attack.all
   @actions = Action.all
+  @newactions = Newaction.all
   erb ( :"attacks/index" )
 end
 
