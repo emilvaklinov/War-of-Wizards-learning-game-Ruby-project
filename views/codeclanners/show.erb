@@ -15,3 +15,11 @@
     <input class="btn btn--danger" type="submit" value="Delete" />
   </form>
 </p>
+
+<h3>Attacked Wizards:</h3>
+
+<ul>
+  <% @codeclanner.wizards.each do |codeclanner| %>
+  <li><%= codeclanner.name %></li>
+  <% end %>
+</ul>

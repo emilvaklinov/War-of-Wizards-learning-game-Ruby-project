@@ -3,7 +3,7 @@
 <p><%= Biography.voldemort %></p>
 <% end %>
 <% if @wizard.name == 'Bellatrix Lestrange' %>
-<p><%=Biography.bellatrix  %></p>
+<p><%=Biography.bellatrix %></p>
 <% end %>
 <% if @wizard.name == 'Lucius Malfoy' %>
 <p><%= Biography.lucius %></p>
@@ -12,6 +12,14 @@
 <p>Wand: <%= @wizard.wand %></p>
 
 <h3>Attacked Codeclanners:</h3>
+
+<ul>
+  <% @wizard.codeclanners.each do |codeclanner| %>
+  <li><%= codeclanner.name %></li>
+  <% end %>
+</ul>
+
+<h3>Attacked by:</h3>
 
 <ul>
   <% @wizard.codeclanners.each do |codeclanner| %>

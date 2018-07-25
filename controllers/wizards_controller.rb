@@ -1,7 +1,7 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require_relative('../models/wizard.rb')
-
+require_relative('../models/biography.rb')
 get '/wizards' do
   @wizards = Wizard.all()
   erb (:"wizards/index")
