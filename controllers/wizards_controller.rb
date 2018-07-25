@@ -2,7 +2,6 @@ require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require_relative('../models/wizard.rb')
 
-
 get '/wizards' do
   @wizards = Wizard.all()
   erb (:"wizards/index")

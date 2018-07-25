@@ -1,5 +1,13 @@
 <h1>Wizard <%= @wizard.name %></h1>
-
+<% if @wizard.name == 'Lord Voldemort' %>
+<p><%= Biography.voldemort %></p>
+<% end %>
+<% if @wizard.name == 'Bellatrix Lestrange' %>
+<p><%=Biography.bellatrix  %></p>
+<% end %>
+<% if @wizard.name == 'Lucius Malfoy' %>
+<p><%= Biography.lucius %></p>
+<% end %>
 <p>House: <%= @wizard.house %></p>
 <p>Wand: <%= @wizard.wand %></p>
 
