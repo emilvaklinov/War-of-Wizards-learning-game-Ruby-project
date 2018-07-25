@@ -1,6 +1,6 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
-require( 'pry-byebug' )
+# require( 'pry-byebug' )
 require_relative('../models/attack.rb')
 require_relative('../models/codeclanner.rb')
 require_relative('../models/wizard.rb')

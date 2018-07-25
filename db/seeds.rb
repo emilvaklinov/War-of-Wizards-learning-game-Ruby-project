@@ -1,7 +1,7 @@
 require_relative('../models/wizard.rb')
 require_relative('../models/codeclanner.rb')
 require_relative('../models/attack.rb')
-require( 'pry-byebug' )
+# require( 'pry-byebug' )
 
 Codeclanner.delete_all()
 Wizard.delete_all()
@@ -53,5 +53,5 @@ wizard3 = Wizard.new({ "name" => "Lucius Malfoy", "house" => "Slytherin",
 
       # codeclanner1.delete
 
-      binding.pry
-      nil
+      # binding.pry
+      # nil
