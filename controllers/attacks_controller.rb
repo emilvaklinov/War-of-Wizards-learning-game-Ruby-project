@@ -27,6 +27,7 @@ post '/attacks' do
   redirect to ("/attacks")
 end
 
+
 post '/attacks/:id/delete' do
     attack = Attack.find(params['id'])
     attack.delete()

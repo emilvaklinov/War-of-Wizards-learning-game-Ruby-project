@@ -1,0 +1,21 @@
+<h1>Edit Codeclanner</h1>
+
+<form class="" action="/codeclanners/<%= @codeclanner.id %>" method="post">
+  <div class="codeclanner-input">
+  <div class="codeclanner-label">
+    <label  for="name">Name: </label>
+  </div>
+    <input id="name" type="text" name="name" value="<%= @codeclanner.name%>"/>
+  </div>
+</br>
+<div class="codeclanner-input">
+  <div class="codeclanner-label">
+
+    <label class="codeclanner-label" for="cohort">Cohort: </label>
+  </div>
+<input id="cohort" type="text" name="cohort" value="<%= @codeclanner.cohort"/>
+</div>
+</br>
+<input type="submit" value="submit"/>
+
+</form>

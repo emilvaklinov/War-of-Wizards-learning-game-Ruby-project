@@ -37,6 +37,23 @@ post '/codeclanners' do
     redirect to '/codeclanners'
 end
 
+# Edit
+get '/codeclanners/:id/edit' do
+  # @codeclanner = Codeclanner.all()
+  @codeclanner = Codeclanner.find(params['id'].to_i)
+  erb(:"codeclanners/edit")
+end
+
+
+# Update
+post '/codeclanners/:id' do
+  codeclanner = Codeclanner.new(params)
+  codeclanner.update()
+  redirect to '/codeclanners/' + params['id']
+
+end
+
+
 # Delete
 post '/codeclanners/:id/delete' do
   codeclanner = Codeclanner.find(params['id'])

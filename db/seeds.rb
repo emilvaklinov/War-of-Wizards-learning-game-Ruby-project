@@ -35,11 +35,11 @@ wizard3 = Wizard.new({ "name" => "Lucius Malfoy", "house" => "Slytherin",
   codeclanner7.save
 
       attack1 = Attack.new({ "wizard_id" => wizard1.id, "codeclanner_id" => codeclanner3.id})
-      attack2 = Attack.new({ "wizard_id" => wizard1.id, "codeclanner_id" => codeclanner2.id})
+      attack2 = Attack.new({ "wizard_id" => wizard2.id, "codeclanner_id" => codeclanner7.id})
       attack3 = Attack.new({ "wizard_id" => wizard2.id, "codeclanner_id" => codeclanner1.id})
       attack4 = Attack.new({ "wizard_id" => wizard3.id, "codeclanner_id" => codeclanner4.id})
-      attack5 = Attack.new({ "wizard_id" => wizard2.id, "codeclanner_id" => codeclanner7.id})
-      attack6 = Attack.new({ "wizard_id" => wizard3.id, "codeclanner_id" => codeclanner6.id})
+      attack5 = Attack.new({ "wizard_id" => wizard1.id, "codeclanner_id" => codeclanner6.id})
+      attack6 = Attack.new({ "wizard_id" => wizard3.id, "codeclanner_id" => codeclanner7.id})
       attack7 = Attack.new({ "wizard_id" => wizard2.id, "codeclanner_id" => codeclanner5.id})
 
 

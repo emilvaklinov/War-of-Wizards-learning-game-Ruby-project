@@ -2,6 +2,18 @@
 
 <p class="p1">Cohort: <%= @codeclanner.cohort %></p>
 
+<p>
+  <form action="/codeclanners/<%= @codeclanner.id %>/delete" method="POST">
+    <input class="btn btn--danger" type="submit" value="Delete" />
+  </form>
+</p>
+
+<p>
+  <form action="/codeclanners/<%= @codeclanner.id %>/edit" method="get">
+    <input class="btn btn--danger" type="submit" value="Update" />
+</p>
+
+
 <h3>Attacked by:</h3>
 
 <ul>
@@ -9,12 +21,6 @@
   <li><%= wizard.name %></li>
   <% end %>
 </ul>
-
-<p>
-  <form action="/codeclanners/<%= @codeclanner.id %>/delete" method="POST">
-    <input class="btn btn--danger" type="submit" value="Delete" />
-  </form>
-</p>
 
 <h3>Attacked Wizards:</h3>
 
