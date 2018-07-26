@@ -8,7 +8,12 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.p1 {
+  color: #f7ca41;
+  margin-bottom: 16px;
+}
+
+h1, h2, h4, h5, h6 {
   font-family: 'Special Elite', cursive;
   margin: 0px;
   padding: 0px;
@@ -20,15 +25,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+h3 {
+  font-family: 'Special Elite', cursive;
+  margin: 0px;
+  padding: 0px;
+  color: #f37a49
+}
 /* a, a:link, a:visited { */
 a {
   color: #deb47a;
   text-decoration: none;
 }
-/* .borders {
-  padding: 2px;
-  border: 1px white solid;
-} */
+
 a:hover, a:active, a:focus {
   color: #c6e2ff;
 }
