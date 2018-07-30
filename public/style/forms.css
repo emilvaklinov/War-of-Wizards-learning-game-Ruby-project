@@ -28,6 +28,10 @@ select {
   width: 10px;
 }
 
+.attack {
+  background-image: url('/images/backgroundgif.gif');
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
 /* .attack {
   background-image: url('/images/backgroundgif.gif');
   width: 100px;

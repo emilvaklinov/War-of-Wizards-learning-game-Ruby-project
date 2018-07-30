@@ -1,28 +1,29 @@
 <h1>Attacks</h1>
 <div class = "flex">
 
-<div class="attack-list">
-<p class="btn--wrapper">
-  <a class="btn btn--action" href="/attacks/new">New attack!</a>
-</p>
-
-<ul>
-  <% for attack in @attacks %>
-  <li>
-  <p class ="wizards-attack"><%= attack.wizard.name %> <%= @actions.sample %> <%= attack.codeclanner.name %></p>
-
-  <p><%= attack.codeclanner.name %> <%= @newactions.sample %> <%= attack.wizard.name %></p>
-
-    <p>
-      <form action="/attacks/<%= attack.id %>/delete" method="POST">
-        <input class="btn btn--danger" type="submit" value="delete" />
-      </form>
+  <div class="attack-list">
+    <p class="btn--wrapper">
+      <a class="btn btn--action" href="/attacks/new">New attack!</a>
     </p>
-  </li>
-  <% end %>
-</ul>
-</div>
-<div>
-<img src="/images/backgroundgif.gif" alt="">
-</div>
+
+    <ul>
+      <% for attack in @attacks %>
+      <li>
+        <p class ="wizards-attack"><%= attack.wizard.name %> <%= @actions.sample %>
+        <%= attack.codeclanner.name %></p>
+
+        <p><%= attack.codeclanner.name %> <%= @newactions.sample %> <%= attack.wizard.name %></p>
+
+        <p>
+          <form action="/attacks/<%= attack.id %>/delete" method="POST">
+            <input class="btn btn--danger" type="submit" value="delete" />
+          </form>
+        </p>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <div>
+    <img class "attack" src="/images/backgroundgif.gif" alt="">
+  </div>
 </div>
