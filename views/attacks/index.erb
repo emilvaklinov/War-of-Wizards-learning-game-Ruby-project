@@ -3,9 +3,13 @@
 
   <div class="attack-list">
     <p class="btn--wrapper">
-      <a class="btn btn--action" href="/attacks/new">New attack!</a>
+      <a class="btn btn--action" href="/attacks/new">Create attack!</a>
     </p>
-
+    <p>
+      <form action="/attacks" method="">
+        <input class="btn btn--danger" type="submit" value="multiply attacks" />
+      </form>
+    </p>
     <ul>
       <% for attack in @attacks %>
       <li>
@@ -19,6 +23,7 @@
             <input class="btn btn--danger" type="submit" value="delete" />
           </form>
         </p>
+
       </li>
       <% end %>
     </ul>
